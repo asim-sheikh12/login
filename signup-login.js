@@ -31,7 +31,7 @@ const signUp = e =>
 //Login page:-
 
 function signupPage() {
-  window.open("file:///home/lenovo/Codes/Signup.html");
+  window.open("https://asim-thoughtwin.github.io/signup/");
 }
 
 const login = e =>

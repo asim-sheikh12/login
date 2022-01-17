@@ -30,6 +30,14 @@ input{
     margin-top: 5px;
     margin-bottom: 5px;
 }
+button{
+    padding: 4px;
+    border-radius: 5px;
+    height: 35px;
+    width: 300px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
 @media screen and (max-width: 600px){
     #formdata{
         width: 100%;
