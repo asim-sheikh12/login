@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+            <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+    
+    <form onsubmit="login(event)">
+        <div class="mainbody">
+<div class="heading" style="color: royalblue;margin-bottom: 5px;">
+        <h1>Log in</h1>
+    </div>
+        <label>Email : </label> 
+        <input type="email" id="email" placeholder="Enter email" required><br><br>
+        <label>Password :</label>
+        <input type="password" id="pass2" placeholder="Enter Password" required><br><br>
+        <input style="margin-top:10px; background-color: gray;" type="submit" value="Login"><hr>
+        <p style="text-align: center;">| Create New Account | </p>
+        <input style="margin-top:10px; background-color: gray;" 
+        type="button" value="Sign Up" onclick="signupPage()">
+
+
+</div>
+
+</form>
+<script src="signup-login.js"></script>
+</body>
+
+</html>
