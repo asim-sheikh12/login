@@ -1,4 +1,4 @@
-
+//Sign Up
 
 function signup()
 {
@@ -22,7 +22,7 @@ const signUp = e =>
         
     }
    
-        localStorage.setItem('formData',JSON.stringify(formData));
+    localStorage.setItem('formData',JSON.stringify(formData));
     JSON.parse(localStorage.getItem('formData'))
     console.log(localStorage.getItem('formData'))
     e.preventDefault();
@@ -34,7 +34,7 @@ function signupPage() {
   window.open("https://asim-thoughtwin.github.io/signup/");
 }
 
-const login = e =>
+const login = (e) =>
 {
     let loginData = 
     {
@@ -42,7 +42,13 @@ const login = e =>
         pw2: document.getElementById('pass2').value,
         
     }
-      const registerData =  JSON.parse(localStorage.getItem('formData'))
+    localStorage.setItem('loginData',JSON.stringify(loginData));
+    console.log(localStorage.getItem('loginData'))
+    e.preventDefault();
+
+    console.log(loginData);
+
+    const registerData =  JSON.parse(localStorage.getItem('formData'))
 
       if(registerData.email===loginData.email && registerData.pw2===loginData.pw2)
       {
@@ -53,10 +59,10 @@ const login = e =>
 else{
     alert("Either Password or email is Incorrect")
 }
-    localStorage.setItem('loginData',JSON.stringify(loginData));
-    console.log(localStorage.getItem('loginData'))
-    e.preventDefault();
-    console.log(loginData);
+    
 }
+
+
+
 
 
