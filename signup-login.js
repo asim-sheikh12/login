@@ -53,10 +53,10 @@ const login = e =>
 else{
     alert("Either Password or email is Incorrect")
 }
-    // localStorage.setItem('loginData',JSON.stringify(loginData));
-    // console.log(localStorage.getItem('loginData'))
-    // e.preventDefault();
-    // console.log(loginData);
+    localStorage.setItem('loginData',JSON.stringify(loginData));
+    console.log(localStorage.getItem('loginData'))
+    e.preventDefault();
+    console.log(loginData);
 }
 
 
