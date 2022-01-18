@@ -1,15 +1,4 @@
-//Sign Up
-
-function signup()
-{
-let pass1 = document.getElementById('pass1').value
-let pass2 = document.getElementById('pass2').value
-if(pass1!=pass2)
-{
-alert("Password does not match")
-}
-}
-const signUp = e =>
+var signUp = e =>
 {
     let formData = 
     {
@@ -22,12 +11,26 @@ const signUp = e =>
         
     }
    
-    localStorage.setItem('formData',JSON.stringify(formData));
+   localStorage.setItem('formData',JSON.stringify(formData));
     JSON.parse(localStorage.getItem('formData'))
     console.log(localStorage.getItem('formData'))
     e.preventDefault();
     console.log(formData);
+
+{
+let pass1 = document.getElementById('pass1').value
+let pass2 = document.getElementById('pass2').value
+if(pass1!=pass2)
+{
+alert("Password does not match")
 }
+else
+{
+alert(`Hi ${formData.firstname}! You have signed up successfully.`)
+}
+}
+}
+
 //Login page:-
 
 function signupPage() {
@@ -61,6 +64,7 @@ else{
 }
     
 }
+
 
 
 
